@@ -10,3 +10,5 @@ const Website = ( { Component , pageProps , router } ) => {
     </ChakraProvider>
   )
 }
+
+export default Website
