@@ -88,7 +88,7 @@ const NavBar = (props) => {
                   <MenuItem as={Link}>Sobre Mi</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Trabajos</MenuItem>
+                  <MenuItem as={Link}>Obras</MenuItem>
                 </NextLink>
                 <NextLink href="/post" passHref>
                   <MenuItem as={Link}>Publicaciones</MenuItem>
