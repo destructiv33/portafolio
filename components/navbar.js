@@ -26,6 +26,7 @@ const LinkIthem = ({ href, path, children }) => {
         p={2}
         bg={active ? "grassTeal" : undefined}
         color={active ? "#202023" : iniciativeColor}
+        borderRadius="md"
       >
         {children}
       </Link>
@@ -67,10 +68,10 @@ const NavBar = (props) => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkIthem href="/works" path={path}>
-            Trabajos
+            Obras
           </LinkIthem>
-          <LinkIthem href="/posts" path={path}>
-            Publicaciones
+          <LinkIthem href="/stack" path={path}>
+            Stack
           </LinkIthem>
         </Stack>
         <Box flex={ 1 } align="right">
@@ -90,8 +91,8 @@ const NavBar = (props) => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Obras</MenuItem>
                 </NextLink>
-                <NextLink href="/post" passHref>
-                  <MenuItem as={Link}>Publicaciones</MenuItem>
+                <NextLink href="/stack" passHref>
+                  <MenuItem as={Link}>Stack</MenuItem>
                 </NextLink>
                 ``
               </MenuList>
