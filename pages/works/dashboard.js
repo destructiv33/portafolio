@@ -11,7 +11,7 @@ const Work = () => (
         Products Dashboard <Badge>2021</Badge>
       </Title>
       <P>
-        Carrito de compras generacion de pdf consumo de API con MySQL.
+        Carrito de compras generación de pdf consumo de API con MySQL.
       </P>
       <List ml={4} my={4}>
         <ListItem>

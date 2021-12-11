@@ -11,8 +11,8 @@ const Work = () => (
         Flutter App <Badge>2021</Badge>
       </Title>
       <P>
-        Este proyecto de flutter copia la forma de de facebook app, con el
-        proposito de conocer la forma en la que trabaja flutter y todas las
+        Este proyecto de flutter copia la forma de facebook app, con el
+        propósito de conocer la forma en la que trabaja flutter y todas las
         cosas que se pueden crear con esta herramienta.
       </P>
       <List ml={4} my={4}>

@@ -45,7 +45,7 @@ const Home = () => {
           mb={6}
         >
           <AlertIcon />
-          Hola, soy un apasionado desarrollador WEB Mexicano!!
+          Hola, soy un apasionado desarrollador WEB Mexicano!
         </Alert>
         <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
@@ -79,10 +79,10 @@ const Home = () => {
             Daniel es un ingeniero en sistemas, apasionado desarrollador web
             autodidacta, su pasión por el desarrollo web radica en hacer código
             y que este se vea reflejado en interfaces amigables y elegantes, con
-            el propósito de solucionar problematicas, cuidando siempre la
-            calidad del desarrollo con las mejores practicas. Le apasiona
+            el propósito de solucionar problemáticas, cuidando siempre la
+            calidad del desarrollo con las mejores prácticas. Le apasiona
             aprender y le encanta la colaboración el intercambio de ideas,
-            conocimiento a través de equipos y{" "}
+            conocimiento a través de equipos{" "}
             <Link href="https://discord.gg/YBNVcsKS">comunidades </Link>
             de desarrollo.
           </Paragraph>
@@ -96,11 +96,11 @@ const Home = () => {
         </Section>
         <Section delay={0.3}>
           <Heading as="h2" variant="section-title">
-            Biografia
+          Biografía
           </Heading>
           <BioSection>
             <BioYear>1998</BioYear>
-            Nacido en Mexico, Mexico.
+            Nacido en México, México.
           </BioSection>
           <BioSection>
             <BioYear>2020</BioYear>
@@ -129,7 +129,7 @@ const Home = () => {
             <Link href="https://www.youtube.com/channel/UCbpdvSDOAmcL_z_oEGDzFvw">
               Videojuegos{" "}
             </Link>
-            , Musica , Salir en bicileta ,
+            , Música , Salir en bicicleta , Rubik Cubes
           </Paragraph>
         </Section>
         <Section delay={0.9}>
