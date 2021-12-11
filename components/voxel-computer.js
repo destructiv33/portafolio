@@ -74,7 +74,7 @@ const VoxelComputer = () => {
       controls.target = target
       setControls(controls)
 
-      loadGLTFModel(scene, '/Computer.glb', {
+      loadGLTFModel(scene, '/computer.glb', {
         receiveShadow: false,
         castShadow: false
       }).then(() => {
