@@ -1,4 +1,4 @@
-import { Box, Container, Heading, SimpleGrid, Tooltip } from "@chakra-ui/react";
+import { Box, Container, Heading, SimpleGrid } from "@chakra-ui/react";
 import {
   SiReact,
   SiAngular,

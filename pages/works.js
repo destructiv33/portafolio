@@ -1,5 +1,5 @@
 import { Container, Heading, SimpleGrid, Divider } from "@chakra-ui/react";
-//import Layout from "../components/layouts/article";
+import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import { GridItem, WorkGridItem } from "../components/grid-item";
 
@@ -11,7 +11,7 @@ import thumbProgramming from "../public/images/works/card_programming.jpg";
 
 
 const Works = () => (
-  //<Layout title="Works">
+<Layout title="Works">
   <Container>
     <Heading as="h3" fontSize={20} mb={4}>
       Obras
@@ -76,7 +76,7 @@ const Works = () => (
     </SimpleGrid>
     
   </Container>
-  //</Layout>
+</Layout>
 );
 
 export default Works;
