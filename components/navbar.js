@@ -17,16 +17,19 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
 
-const LinkIthem = ({ href, path, children }) => {
+const LinkIthem = ({ href, path, _target, children, ...props }) => {
   const active = path === href;
-  const iniciativeColor = useColorModeValue("gray200", "whiteAlpha.900");
+  const activeColor = useColorModeValue("whiteAlpha.900", "gray.800");
+  const iniciativeColor = useColorModeValue("gray.800", "whiteAlpha.900");
   return (
     <NextLink href={href} passHref>
       <Link
         p={2}
         bg={active ? "grassTeal" : undefined}
-        color={active ? "#202023" : iniciativeColor}
+        color={active ? activeColor : iniciativeColor}
+        _target={_target}
         borderRadius="md"
+        {...props}
       >
         {children}
       </Link>
@@ -41,9 +44,8 @@ const NavBar = (props) => {
       position="fixed"
       as="nav"
       w="100%"
-      bg={useColorModeValue('#f4ede4', '#202023')}
-      style={{ backdropFilter: "blur(10px" }}
-      zIndex={ 1 }
+      style={{ backdropFilter: "blur(10px)" }}
+      zIndex={1}
       {...props}
     >
       <Container
@@ -74,9 +76,9 @@ const NavBar = (props) => {
             Stack
           </LinkIthem>
         </Stack>
-        <Box flex={ 1 } align="right">
-        <ThemeToggleButton />
-          <Box ml={ 2 } display={{ base: "inline-block", md: "none" }}>
+        <Box flex={1} align="right">
+          <ThemeToggleButton />
+          <Box ml={2} display={{ base: "inline-block", md: "none" }}>
             <Menu>
               <MenuButton
                 as={IconButton}
