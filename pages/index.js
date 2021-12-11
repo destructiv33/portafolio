@@ -8,16 +8,29 @@ import {
   Button,
   Alert,
   AlertIcon,
+  List,
+  ListItem,
+  Icon,
   useColorModeValue,
+  useClipboard,
 } from "@chakra-ui/react";
+import {
+  IoLogoGithub,
+  IoLogoTwitter,
+  IoLogoSteam,
+  IoLogoLinkedin,
+  IoLogoYoutube,
+  IoLogoInstagram,
+  IoMail,
+} from "react-icons/io5";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 
-
 const Home = () => {
+  const { hasCopied, onCopy } = useClipboard("jdrh980909@gmail.com");
   return (
     <Layout>
       <Container>
@@ -81,7 +94,7 @@ const Home = () => {
             </NextLink>
           </Box>
         </Section>
-        <Section delay={0.4}>
+        <Section delay={0.3}>
           <Heading as="h2" variant="section-title">
             Biografia
           </Heading>
@@ -108,7 +121,7 @@ const Home = () => {
             como desarrollador.
           </BioSection>
         </Section>
-        <Section delay={0.9}>
+        <Section delay={0.6}>
           <Heading as="h2" variant="section-title">
             I ♥
           </Heading>
@@ -118,6 +131,122 @@ const Home = () => {
             </Link>
             , Musica , Salir en bicileta ,
           </Paragraph>
+        </Section>
+        <Section delay={0.9}>
+          <Heading as="h2" variant="section-title">
+            Contacto
+          </Heading>
+          <List>
+            <ListItem>
+              <Button
+                variant="ghost"
+                colorScheme={useColorModeValue("gruvAqua", "gruvPurple")}
+                leftIcon={<Icon as={IoMail} />}
+                onClick={onCopy}
+              >
+                {hasCopied ? "Copiado" : "Mi correo electronico"}
+              </Button>
+            </ListItem>
+          </List>
+        </Section>
+
+        <Section delay={0.9}>
+          <Heading as="h3" variant="section-title">
+            Social media
+          </Heading>
+          <List>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/jdrhmx/"
+                rel="noopener"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme={useColorModeValue("gruvAqua", "gruvPurple")}
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  LinkedIn
+                </Button>
+              </Link>
+            </ListItem>
+
+            <ListItem>
+              <Link
+                href="https://github.com/destructiv33"
+                rel="noopener"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme={useColorModeValue("gruvAqua", "gruvPurple")}
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  Git Hub
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.instagram.com/destructive.dev/"
+                rel="noopener"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme={useColorModeValue("gruvAqua", "gruvPurple")}
+                  leftIcon={<Icon as={IoLogoInstagram} />}
+                >
+                  Instagram
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://twitter.com/destructiv33"
+                rel="noopener"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme={useColorModeValue("gruvAqua", "gruvPurple")}
+                  leftIcon={<Icon as={IoLogoTwitter} />}
+                >
+                  Twitter
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.youtube.com/channel/UCbpdvSDOAmcL_z_oEGDzFvw"
+                rel="noopener"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme={useColorModeValue("gruvAqua", "gruvPurple")}
+                  leftIcon={<Icon as={IoLogoYoutube} />}
+                >
+                  Youtube
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://steamcommunity.com/profiles/76561198884759896/"
+                rel="noopener"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme={useColorModeValue("gruvAqua", "gruvPurple")}
+                  leftIcon={<Icon as={IoLogoSteam} />}
+                >
+                  Steam
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
         </Section>
       </Container>
     </Layout>
