@@ -17,6 +17,10 @@ _Clonar el repositorio_
 git clone https://github.com/destructiv33/portafolio.git
 ```
 ```
+npm --version
+```
+_v16.9.0_
+```
 npm install
 ```
 ```
