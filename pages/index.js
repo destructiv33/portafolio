@@ -78,13 +78,11 @@ const Home = () => {
           <Paragraph>
             Daniel es un ingeniero en sistemas, apasionado desarrollador web
             autodidacta, su pasión por el desarrollo web radica en hacer código
-            y que este se vea reflejado en interfaces amigables y elegantes, con
+            y que este se vea reflejado en interfaces amigables con
             el propósito de solucionar problemáticas, cuidando siempre la
             calidad del desarrollo con las mejores prácticas. Le apasiona
-            aprender y le encanta la colaboración el intercambio de ideas,
-            conocimiento a través de equipos{" "}
-            <Link href="https://discord.gg/YBNVcsKS">comunidades </Link>
-            de desarrollo.
+            aprender y le encanta la colaboración el intercambio de ideas y
+            conocimiento entre todos.
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="works">
@@ -111,14 +109,18 @@ const Home = () => {
               target="_blank"
             >
               {" "}
-              Tecnológico de Estudios Superiores de Huixquilucan{" "}
+              Tecnológico de Estudios Superiores de Huixquilucan{""}
             </Link>
             como Ingeniero en Sistemas.
           </BioSection>
           <BioSection>
             <BioYear>2021</BioYear>
             Trabaja en <Link href="https://telepro.com.mx/"> TELEPRO </Link>
-            como desarrollador.
+            como desarrollador .NET
+          </BioSection>
+          <BioSection>
+            <BioYear>2023</BioYear>
+            Titulado como Ingeniero En Sistemas Computacionales.
           </BioSection>
         </Section>
         <Section delay={0.6}>
@@ -129,7 +131,7 @@ const Home = () => {
             <Link href="https://www.youtube.com/channel/UCbpdvSDOAmcL_z_oEGDzFvw">
               Videojuegos{" "}
             </Link>
-            , Música , Salir en bicicleta , Rubik Cubes
+            , Música , Modelismo, Rubik Cubes
           </Paragraph>
         </Section>
         <Section delay={0.9}>
